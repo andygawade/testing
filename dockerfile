@@ -6,7 +6,7 @@
 FROM node:20-alpine AS builder
 WORKDIR /app
 
-# Copy package files and install dependencies
+# Copy package files and install dependencies (Add some new feature)
 COPY package*.json ./
 RUN npm install --only=production
 
